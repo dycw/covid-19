@@ -92,7 +92,7 @@ def plot_new_cases(
         vdim_label = scale * "0"
         vdim_label = f"New cases ({vdim_label})"
     if smooth is not None:
-        data = data.rolling(smooth).mean()
+        data = data.rolling(smooth, min_periods=int(smooth / 2)).mean()
     return Curve(
         data=(data.index, data.values),
         kdims=["date"],
