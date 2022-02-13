@@ -1,0 +1,4 @@
+[submodule "python-repo-configs"]
+	path = python-repo-configs
+	url = git@github.com:dycw/python-repo-configs.git
+	branch = master
