@@ -1,1 +1,5 @@
-# covid-19-hk-jp-us
+# covid-19
+
+A plot
+
+![plot](assets/plot.png)

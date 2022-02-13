@@ -15,7 +15,7 @@ def main() -> None:
     current = cast(str, getenv("PATH"))
     bin_ = Path.cwd().joinpath("bin").as_posix()
     environ["PATH"] = ":".join([current, bin_])
-    save(plot, "plot.png")
+    save(plot, Path("assets", "plot.png"))
 
 
 if __name__ == "__main__":
